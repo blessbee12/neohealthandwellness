@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to schedule an appointment, feel free to contact us. Our team is here to help you.</p>
+        
+        <form id="contactUsForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Share your suggestions or feedback here"></textarea>
+
+            <button type="submit" id="sendButton">Send</button>
+        </form>
+
+        <div id="confirmationMessage" style="display: none; margin-top: 20px;">
+            <p>Thank you for contacting us! We'll get back to you shortly.</p>
+        </div>
+
+        <div class="clinic-info">
+            <p><strong>Address:</strong> Plot 16424 Nossop Cres, Phase 1, Gaborone West, Gaborone, Botswana</p>
+            <p><strong>Phone:</strong> (+267) 71823042 / (+267) 72381194</p>
+            <p><strong>Email:</strong> <a href="mailto:neohealth.wellnesscenter@gmail.com">neohealth.wellnesscenter@gmail.com</a></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
