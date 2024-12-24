@@ -1,541 +1,916 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: hwb(0 0% 96%);
-    background-color: #98e90b;
-    padding: 0;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #010509;
-    color: #ffffff;
-    padding: 1rem 2rem;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+.header {
+    background: #ce4a11;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header.logoh1 {
-    font-size: 1.8rem;
-    font-weight: bold;
+.logo {
+    flex: 1;  /* Allow the logo to take up space on the left */
 }
 
-header nav ul {
-    list-style-type: none;
+.navbar {
+    flex: 3;  /* Allow the navigation bar to take up the remaining space */
+}
+
+.logo img {
+    max-width: 100%;  /* Ensures the logo resizes properly */
+    height: auto;     /* Maintains aspect ratio */
+}
+
+
+.navbar ul {
+    list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
 }
 
-header nav ul li {
-    font-size: 1rem;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+.navbar a {
+    color: white;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
 
-header nav ul li a:hover {
-    color: #ffcc00;
-}
-
+/* Hero Section */
 .hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: rgb(4, 4, 4);
     text-align: center;
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: #ffffff;
-    padding: 4rem 2rem;
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 100px 20px;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    max-width: 600px;
+    margin-bottom: 30px;
 }
 
 .hero .btn {
-    background-color: #070707;
-    color: #004080;
-    padding: 0.8rem 1.5rem;
+    background: #f47920;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background: #e0f7fa;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #0d0d0d;
+}
+
+/* Footer Section */
+.footer {
+    background: #0b0b0b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+.top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.btn {
+    background-color: #ff5900;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 1rem;
     border-radius: 5px;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.hero .btn:hover {
-    background-color: #070707;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+.btn:hover {
+    background-color: #b33c00;
+}
+.navbar a {
+    color: #333;  /* Default text color */
+    text-decoration: none;  /* Removes the underline */
+    padding: 10px 15px;  /* Adds padding to the links */
+    display: inline-block;  /* Ensures the padding works properly */
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for hover effect */
 }
 
-section {
-    padding: 2rem 2rem;
-    margin: 2rem 0;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.navbar a:hover {
+    background-color: black;  /* Background color turns black on hover */
+    color: white;  /* Text color turns white on hover */
+}
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #000; /* Black text color */
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-section h3 {
-    font-size: 1.8rem;
-    color: #004080;
-    margin-bottom: 1rem;
+/* Header Section */
+.header {
+    background-color: #FFA500; /* Orange background */
+    padding: 20px 0;
 }
 
-section p {
-    font-size: 1rem;
-    color: #666;
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer {
-    background-color: #004080;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.header .logo img {
+    max-width: 150px;
 }
 
-footer p {
-    font-size: 0.9rem;
+.navbar ul {
+    list-style: none;
+    display: flex;
 }
 
-.text-center {
-    text-align: center;
+.navbar ul li {
+    margin: 0 15px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
+.navbar ul li a {
+    color: #000; /* Black text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect for menu */
+.navbar ul li a:hover {
+    color: #FFA500; /* Orange text on hover */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+.contact-section .container {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .btn {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-    }
+.contact-section h2 {
+    color: #FFA500; /* Orange text for heading */
 }
 
-
-#services {
-    background-image: url('image/woundcare.jpg');
-   background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    color: rgb(11, 11, 11); 
-    padding: 50px 20px; 
-    text-align: center; 
+.contact-details p {
+    font-size: 1.1em;
 }
 
-#services h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: rgb(122, 103, 103);
-}
-
-.service {
-    background: rgba(255, 255, 255, 0.8);  */
-    margin: 20px auto;
+form {
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.service h3 {
-    font-size: 1.8em;
-    color: #060606; 
-    margin-bottom: 10px;
-}
-
-.service p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
-}
-
-
-.hero {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-
-
-#contact {
-    background-color: #680f0f; 
-    padding: 40px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-}
-
-#contact h2 {
-    text-align: center;
-    color: #101010; 
-}
-
-#contact p {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #0b0a0a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     display: block;
-    margin-top: 15px;
-    font-weight: bold;
-    color: #101010;
+    margin: 10px 0 5px;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #0a0a0a;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
 }
 
-form button {
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: rgb(12, 12, 12);
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
+form textarea {
+    height: 120px;
 }
 
-form button:hover {
-    background-color: #0056b3;
-}
-
-
-#thankYouMessage {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    color: #5f28a7; 
-}
-
-
-.clinic-info {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #555;
-}
-
-.clinic-info p {
-    margin: 5px 0;
-}
-#about-us {
-    background-image: url('image/mAmA.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #080808; 
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-
-#about-us h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #f50000; 
-    font-family: 'Arial', sans-serif;
-}
-
-
-#about-us p {
-    font-size: 1.6em;
-    font-weight: bold;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    font-family: 'Roboto', sans-serif;
-    color: #000000; 
-}
-
-
-#about-us p:last-child {
-    margin-bottom: 0;
-}
-
-
-#about-us .cta-button {
-    background-color: #9d1a1a;
-    color: #000;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-#about-us .cta-button:hover {
-    background-color: #716f6d; 
+form .btn {
+    background-color: #FFA500; /* Orange button */
     color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 4px;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.6); 
-    padding: 20px;
-    text-align: center;
+form .btn:hover {
+    background-color: #e59400; /* Darker orange on hover */
 }
 
-.logo-container img {
-    max-width: 200px; 
-    height: auto;
-    display: block;
-    margin: 0; 
-    float: left; 
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #0b0b0a; 
-    font-family: 'Arial', sans-serif;
-}
-
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 0;
-    margin: 20px 0;
 }
 
-nav ul li {
+/* Header Section */
+.header {
+    background-color: #006f90;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    max-width: 150px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+.navbar ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #444341; 
+.navbar ul li a:hover {
+    color: #f4a300; /* Hover effect */
 }
 
-#hero {
-    position: relative;
-    height: 100vh; 
-    overflow: hidden; 
+/* Who We Are Section */
+.who-we-are {
+    padding: 40px 20px;
+    background-color: #fff;
     text-align: center;
-    color: white; 
 }
 
-#hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; 
+.who-we-are h2 {
+    color: #090909;
 }
 
-#hero h1, #hero p {
-    position: relative; 
-    z-index: 1;
-    margin: 0;
-    padding: 20px;
+.who-we-are p {
+    font-size: 1.1em;
+    margin-top: 10px;
 }
 
-
-footer {
+/* Refer a Patient Section */
+.refer-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
     text-align: center;
-    background-color: #333; 
-    padding: 20px;
-    color: white; 
 }
 
+.refer-section h3 {
+    color: #0b0b0b;
+}
 
-* {
+.refer-section .btn {
+    background-color: #f9320a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+
+.refer-section .btn:hover {
+    background-color: #f4a300;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
 
 .header {
-    background-color: #8b450b; 
+    background-color: #904600;
+    padding: 20px;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    justify-content: center;
 }
 
-/* Logo Alignment */
-.logo-container {
-    display: flex;
-    align-items: left;
+.navbar ul li {
+    margin: 0 15px;
 }
 
-.logo-container img {
-    max-height: 80px; /* Logo height */
-    margin-right: 15px;
-}
-
-/* Heading Style */
-.header h1 {
-    font-family: 'Roboto', sans-serif; /* Roboto font */
-    font-size: 20px;
-    font-weight: bold;
-    color: #010101; /* White text for heading */
-}
-
-/* Navigation Style */
-.nav {
-    display: flex;
-    gap: 20px;
-}
-
-.nav a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #000000; /* White text for links */
+.navbar ul li a {
+    color: white;
     text-decoration: none;
 }
 
-.nav a:hover {
-    text-decoration: underline;
+.services {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-/* Main Content */
-.main {
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card .btn {
+    background-color: #904100;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.service-card .btn:hover {
+    background-color: #f4a300;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #ffffff;
 }
-
-.main h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000; /* Dark brown color for the main heading */
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #5b1e0c;
-    color: #0a0a0a;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-/* General Reset */
-* {
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    color: #000000; /* Default text color set to black */
+.header {
+    background-color: #904a00;
+    padding: 20px;
+    color: white;
 }
 
-/* Hero Section */
-#hero {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-#hero h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    color: #000000; /* Black font color */
-    margin-bottom: 15px;
+.navbar ul li {
+    margin: 0 15px;
 }
 
-#hero p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #000000; /* Black font color */
-    margin-bottom: 20px;
-}
-
-#hero .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff; /* White text for the button */
-    background-color: #5b1e0c; /* Dark brown background for the button */
+.navbar ul li a {
+    color: white;
     text-decoration: none;
+}
+
+.referral-section {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.referral-section form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.referral-section form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.referral-section form input, 
+.referral-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.referral-section form button {
+    background-color: #903e00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.referral-section form button:hover {
+    background-color: #f4a300;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Container for header and search bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the search bar container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: #ff6600; /* Use an orange-like color */
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
 }
 
-#hero .btn:hover {
-    background-color: #8a3c1f; /* Slightly lighter brown on hover */
+.search-container button i {
+    color: white;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header Styles */
+.header {
+    background-color: #FFA500; /* Orange background */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.navbar a {
+    color: #000; /* Black text */
+}
 
+.navbar ul li a:hover {
+    color: #FFA500; /* Orange text on hover */
+}
 
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #000;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    background: #ff6600; /* Orange button */
+}
+
+/* Footer Section */
+.footer {
+    background: #FFA500; /* Orange footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+}
+
+/* Service Card */
+.service-card i {
+    color: #FFA500; /* Orange icon color */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #ff5900;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #e59400; /* Darker orange on hover */
+}
+
+/* Search Bar */
+.search-container button {
+    background-color: #ff6600; /* Orange background */
+}
+.service-card .btn {
+    background-color: #000; /* Black button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.service-card .btn:hover {
+    background-color: #FFA500; /* Orange hover effect */
+    color: white;
+}
+/* Team Member Card */
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover Effects for Team Member */
+.team-member:hover {
+    transform: translateY(-15px) rotate(0.5deg);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fffbf0;
+}
+
+/* Team Photo */
+.team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.team-member:hover .team-photo {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 122, 0, 0.6);
+}
+
+/* Team Name and Role */
+.team-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.team-role {
+    font-size: 1.2rem;
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+/* Team Description */
+.team-description {
+    font-size: 1rem;
+    color: #666;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+/* Glow on Hover */
+.team-member:hover .team-description {
+    opacity: 0.9;
+}
+
+/* Background Effects */
+.expert-team::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 122, 0, 0.1), transparent);
+    z-index: -1;
+    transform: translate(-50%, 0);
+    animation: pulse 6s infinite alternate;
+}
+
+/* Pulse Effect */
+@keyframes pulse {
+    from {
+        transform: translate(-50%, -10%);
+        opacity: 0.7;
+    }
+    to {
+        transform: translate(-50%, 10%);
+        opacity: 0.3;
+    }
+}
+/* Menu Bar */
+.menu-bar {
+    background-color: #ff7a00; /* Orange background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Links */
+.menu-bar a {
+    text-decoration: none;
+    color: #ffffff; /* White text for contrast */
+    font-size: 1rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.menu-bar a:hover {
+    color: #ffdda2; /* Lighter orange on hover */
+}
+
+/* Logo or Title */
+.menu-bar .logo {
+    font-size: 1.5rem;
+    color: #fff; /* White text */
+    font-weight: bold;
+}
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Expert Team Section */
+.expert-team {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    animation: slideIn 1.2s ease-out forwards;
+}
+
+/* Animation for Title */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Fade-In Animation for Team Members */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Team Member Card */
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover Effects for Team Member */
+.team-member:hover {
+    transform: translateY(-15px) rotate(0.5deg);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fffbf0;
+}
+
+/* Team Photo */
+.team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.team-member:hover .team-photo {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 122, 0, 0.6);
+}
+
+/* Team Name and Role */
+.team-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.team-role {
+    font-size: 1.2rem;
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+/* Team Description */
+.team-description {
+    font-size: 1rem;
+    color: #666;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+/* Glow on Hover */
+.team-member:hover .team-description {
+    opacity: 0.9;
+}
+
+/* Background Effects */
+.expert-team::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 122, 0, 0.1), transparent);
+    z-index: -1;
+    transform: translate(-50%, 0);
+    animation: pulse 6s infinite alternate;
+}
+
+/* Pulse Effect */
+@keyframes pulse {
+    from {
+        transform: translate(-50%, -10%);
+        opacity: 0.7;
+    }
+    to {
+        transform: translate(-50%, 10%);
+        opacity: 0.3;
+    }
+}
+/* Navbar Styling */
+.navbar {
+    background-color: #ff7a00; /* Bright orange background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the right */
+    gap: 20px; /* Space between menu items */
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff; /* White text for contrast */
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #e66900; /* Darker orange on hover */
+}

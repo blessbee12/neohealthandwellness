@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Healthcare Solutions Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="refer.html">Refer a patient</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Referral Section -->
+    <section id="referrals" class="referral-section">
+        <div class="container">
+            <h2>Refer a Patient</h2>
+            <p>If you are a healthcare provider or medical professional, use the form below to refer a patient to our services.</p>
+
+            <!-- Referral Form -->
+            <form action="/submit-referral" method="POST">
+                <label for="referring-name">Referring Physician's Name*</label>
+                <input type="text" id="referring-name" name="referring_name" required>
+
+                <label for="patient-name">Patient's Name*</label>
+                <input type="text" id="patient-name" name="patient_name" required>
+
+                <label for="contact-number">Contact Number*</label>
+                <input type="tel" id="contact-number" name="contact_number" required>
+
+                <label for="patient-condition">Patient's Condition</label>
+                <textarea id="patient-condition" name="patient_condition"></textarea>
+
+                <button type="submit" class="btn">Submit Referral</button>
+            </form>
+
+            <!-- Additional Referral Information -->
+            <p>For more detailed information about our services and referral process, please contact us directly.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Neo Health and Wellness Center| All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

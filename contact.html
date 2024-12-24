@@ -3,47 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-
+    <title>Contact Us - Healthcare Solutions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to schedule an appointment, feel free to contact us. Our team is here to help you.</p>
-        
-        <form id="contactUsForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email address">
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Share your suggestions or feedback here"></textarea>
-
-            <button type="submit" id="sendButton">Send</button>
-        </form>
-
-        <div id="confirmationMessage" style="display: none; margin-top: 20px;">
-            <p>Thank you for contacting us! We'll get back to you shortly.</p>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Healthcare Solutions Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="clinic-info">
-            <p><strong>Address:</strong> Plot 16424 Nossop Cres, Phase 1, Gaborone West, Gaborone, Botswana</p>
-            <p><strong>Phone:</strong> (+267) 71823042 / (+267) 72381194</p>
-            <p><strong>Email:</strong> <a href="mailto:neohealth.wellnesscenter@gmail.com">neohealth.wellnesscenter@gmail.com</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or ready to schedule? Reach out to us!</p>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <p><strong>Phone:</strong> +267 71823042/ 7356266</p>
+                <p><strong>Email:</strong> neohealth.wellnesscenter@gmail.com</p>
+                <p><strong>Office Locations:</strong> Plot 16424 Nossop Cres,Phase 1,Gaborone West,Gaborone Botswana</p>
+                <p><strong>Postal Adress:</strong>P O Box 26386, Gaborone</p>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="/submit-form" method="POST">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first_name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name">
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <label for="consent">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    I give consent to use my information for communication as per your <a href="#privacy-policy">Privacy Policy</a>.
+                </label>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Healthcare Solutions | All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

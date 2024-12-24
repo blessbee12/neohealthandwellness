@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo Health and Wellness Wound Care Clinic</title>
+    <title>Neo Health and Wellness Clinic Center</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="image/logo.jpg" alt="Neo Health and Wellness Center Logo" />
-            <h1>Welcome to Neo Health and Wellness Wound Care Clinic</h1>
+    <!-- Top Buttons Section -->
+    <div class="top-buttons">
+        <a href="https://www.healogics.com/appointment-request/" class="btn">Book an Appointment</a>
+        <a href="https://healogics.vantagepay.net" class="btn">Pay My Bill</a>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Healthcare Solutions Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="refer.html">Refer a patient</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="hero">
-        <h2>Expert Wound Care You Can Trust</h2>
-        <p>Your healing journey starts here. Specialized treatment for every wound.</p>
-        <a href="services.html" class="btn">Explore Services</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Neo Health and Wellness Center</h1>
+            <p>Providing innovative solutions to promote healing and improve quality of life.</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2024 Neo Health and Wellness Wound Care Clinic. All rights reserved.</p>
-    </footer>
 
-    <script src="script.js"></script>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We specialize in advanced wound care and hyperbaric oxygen therapy, offering comprehensive treatment plans tailored to each patient’s needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fa-solid fa-medkit"></i>
+                    <h3>Wound Care</h3>
+                    <p>Comprehensive wound care solutions for faster healing.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Hyperbaric Therapy</h3>
+                    <p>Innovative treatments to support tissue recovery.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-user-md"></i>
+                    <h3>Expert Team</h3>
+                    <p>Our team of specialists is dedicated to your care.</p>
+                </div>
 </body>
 </html>
+
+     

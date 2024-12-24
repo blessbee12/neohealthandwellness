@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Team</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff7a00;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li {
+            display: inline;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #ffd699;
+        }
+
+        /* Expert Team Section */
+        .expert-team {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Team Container */
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /* Team Member Card */
+        .team-member {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            width: 280px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effects */
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Image Styling */
+        .team-photo {
+            width: 100%;
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover; /* Ensures the image covers the entire container */
+        }
+
+        /* Captions */
+        .team-name {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .team-role {
+            font-size: 1.2rem;
+            color: #ff7a00;
+            margin-bottom: 10px;
+        }
+
+        .team-description {
+            font-size: 1rem;
+            color: #666;
+            margin: 0 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">Wound Care Experts</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="refer.html">Refer A Patient</a></li>
+        </ul>
+    </nav>
+    
+    <section class="expert-team">
+        <h2 class="section-title">Meet Our Expert Team</h2>
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="image.png" alt="Neo Monwela" class="team-photo">
+                <h3 class="team-name">Neo Monwela</h3>
+                <p class="team-role">Director</p>
+                <p class="team-description">Director of Wound Care Experts with extensive leadership experience.</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="blessing-placeholder.jpg" alt="Blessing Rankunyana" class="team-photo">
+                <h3 class="team-name">Blessing Rankunyana</h3>
+                <p class="team-role">IT Specialist</p>
+                <p class="team-description">IT Specialist managing advanced technical solutions for healthcare.</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="alex-placeholder.jpg" alt="Alex Smith" class="team-photo">
+                <h3 class="team-name">Alex Smith</h3>
+                <p class="team-role">Marketing Lead</p>
+                <p class="team-description">Marketing expert driving growth and brand visibility for the company.</p>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="jane-placeholder.jpg" alt="Jane Doe" class="team-photo">
+                <h3 class="team-name">Jane Doe</h3>
+                <p class="team-role">Financial Advisor</p>
+                <p class="team-description">Financial strategist ensuring sustainable operations and investments.</p>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="team-member">
+                <img src="mike-placeholder.jpg" alt="Mike Johnson" class="team-photo">
+                <h3 class="team-name">Mike Johnson</h3>
+                <p class="team-role">Operations Manager</p>
+                <p class="team-description">Ensuring seamless operations and service delivery excellence.</p>
+            </div>
+            <!-- Team Member 6 -->
+            <div class="team-member">
+                <img src="sarah-placeholder.jpg" alt="Sarah Lee" class="team-photo">
+                <h3 class="team-name">Sarah Lee</h3>
+                <p class="team-role">Customer Relations</p>
+                <p class="team-description">Building strong relationships with clients for long-term success.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

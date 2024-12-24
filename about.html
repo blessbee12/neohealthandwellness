@@ -3,23 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Wound Care Clinic</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Us - Neo Health and Wellness Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        /* Header Section */
+        header {
+            padding: 20px;
+            background: #ff8c42; /* Orange theme */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+            border-radius: 8px; /* Rounded edges for logo */
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffdda1; /* Light orange on hover */
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ff8c42;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Image Container Styling */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Values Section */
+        .values {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .value-card {
+            width: 250px;
+            background: #fff;
+            border: 2px solid #ff8c42;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: scale(1.05);
+        }
+
+        .value-card i {
+            font-size: 2rem;
+            color: #ff8c42;
+            margin-bottom: 10px;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #ff8c42;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="about-us">
-        <h2>About Us</h2>
-        <p>Welcome to Neo Health and Wellness Center Wound Care Clinic, where we specialize in providing personalized care for every patient. Our team of medical professionals is dedicated to helping you recover with the best wound care solutions.</p>
-        <p>We believe in treating the whole person, not just the wound. Our clinic is equipped with the latest technology and staffed with compassionate, experienced professionals who are here to help you through every step of your healing process.</p>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.jpg" alt="Neo Health and Wellness Center">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="refer.html">Refer a patient</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are">
+        <h2>Who We Are <i class="fas fa-users"></i></h2>
+        <p>At Neo Health and Wellness Center, we are a dedicated team of healthcare professionals committed to providing high-quality care to all our patients. With years of experience and a patient-centered approach, we are here to support your healing journey.</p>
+        <div class="image-container">
+            <img src="clean.jpg" alt="Team at work">
+        </div>
     </section>
+
+    <!-- Vision and Mission Section -->
+    <section id="vision-mission">
+        <h2>Our Vision <i class="fas fa-bullseye"></i></h2>
+        <p>To become a proactive and client-responsive professional nursing and advanced wound care practice center.</p>
+        <div class="image-container">
+            <img src="ostomy care.jpeg" alt="Vision">
+        </div>
+
+        <h2>Our Mission <i class="fas fa-handshake"></i></h2>
+        <p>To provide support and unquestionable employee empowerment with dedication to attract and retain staff. We are committed to serve our clients timely and efficiently to ensure high-level standards.</p>
+        <div class="image-container">
+            <img src="caregiver.jpg" alt="Mission">
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section id="our-values">
+        <h2>Our Values <i class="fas fa-star"></i></h2>
+        <div class="values">
+            <div class="value-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Excellence</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-crown"></i>
+                <h3>Leadership</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Integrity</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>Teamwork</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Transformation</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Empowerment</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>Respect</h3>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-globe"></i>
+                <h3>Botho</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Neo Health and Wellness Center | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
-
