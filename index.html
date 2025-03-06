@@ -4,75 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neo Health and Wellness Clinic Center</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Top Buttons Section -->
-    <div class="top-buttons">
-        <a href="https://www.healogics.com/appointment-request/" class="btn">Book an Appointment</a>
-        <a href="https://healogics.vantagepay.net" class="btn">Pay My Bill</a>
+    <div class="container text-end py-2">
+        <a href="https://www.healogics.com/appointment-request/" class="btn btn-warning">Book an Appointment</a>
+        <a href="https://healogics.vantagepay.net" class="btn btn-primary">Pay My Bill</a>
     </div>
 
-    <!-- Header Section -->
-    <header class="header">
+    <!-- Header Section with Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Healthcare Solutions Logo">
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="appointment.html">Book Appointment</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="refer.html">Refer a patient</a></li>
+            <a class="navbar-brand" href="#">Neo Health</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="refer.html">Refer a patient</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to Neo Health and Wellness Center</h1>
-            <p>Providing innovative solutions to promote healing and improve quality of life.</p>
-            <a href="#services" class="btn">Learn More</a>
+    <section class="hero text-center py-5 bg-light">
+        <div class="container">
+            <h1 class="text-warning">Welcome to Neo Health and Wellness Center</h1>
+            <p class="lead">Providing innovative solutions to promote healing and improve quality of life.</p>
+            <a href="#services" class="btn btn-warning">Learn More</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Us</h2>
+    <section class="about py-5" id="about">
+        <div class="container text-center">
+            <h2 class="text-warning">About Us</h2>
             <p>We specialize in advanced wound care and hyperbaric oxygen therapy, offering comprehensive treatment plans tailored to each patient’s needs.</p>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <i class="fa-solid fa-medkit"></i>
-                    <h3>Wound Care</h3>
-                    <p>Comprehensive wound care solutions for faster healing.</p>
+    <section class="services py-5 bg-light" id="services">
+        <div class="container text-center">
+            <h2 class="text-warning">Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="service-card p-4 border rounded bg-white shadow-sm">
+                        <i class="fa-solid fa-medkit fa-3x text-warning"></i>
+                        <h3>Wound Care</h3>
+                        <p>Comprehensive wound care solutions for faster healing.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-heart"></i>
-                    <h3>Hyperbaric Therapy</h3>
-                    <p>Innovative treatments to support tissue recovery.</p>
+                <div class="col-md-4">
+                    <div class="service-card p-4 border rounded bg-white shadow-sm">
+                        <i class="fa-solid fa-heart fa-3x text-warning"></i>
+                        <h3>Hyperbaric Therapy</h3>
+                        <p>Innovative treatments to support tissue recovery.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-user-md"></i>
-                    <h3>Expert Team</h3>
-                    <p>Our team of specialists is dedicated to your care.</p>
+                <div class="col-md-4">
+                    <div class="service-card p-4 border rounded bg-white shadow-sm">
+                        <i class="fa-solid fa-user-md fa-3x text-warning"></i>
+                        <h3>Expert Team</h3>
+                        <p>Our team of specialists is dedicated to your care.</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-warning text-white text-center py-3">
+        <p>&copy; 2024 Neo Health and Wellness Center | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-     
